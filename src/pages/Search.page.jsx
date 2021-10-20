@@ -18,9 +18,10 @@ const Search = props => {
     const [searchQuery, setSearchQuery] = useState(null);
 
     useEffect(() => {
-        const url = "http://localhost:3001/jobs"
+        const url = "https://ac-job-board-api.herokuapp.com/jobs"
         if (jobs == null) {
-            if (props.match.params.searchQuery === "null") {
+            const sq = props.match.params.searchQuery
+            if (sq === "null") {
                 fetch(url).then(jobs => jobs.json()).then(response => setJobs(response.filter(job => job.location == props.match.params.location)))
             } else {
                 fetch(url)

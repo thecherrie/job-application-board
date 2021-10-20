@@ -1,5 +1,5 @@
 import '../App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -26,15 +26,16 @@ class Home extends React.Component {
         this.state = {
             locationDropdownOpen: false,
             mobileDropdownOpen: false,
-            locations: [],
-            filteredLocations: [],
+            locations: {},
+            filteredLocations: {},
             selectedLocation: "London",
             jobSearchQuery: null,
         }
     }
 
     componentDidMount() {
-        fetch('https://ac-job-board-api.herokuapp.com/locations')
+        // fetch('https://ac-job-board-api.herokuapp.com/locations')
+        fetch('http://localhost:3001/jobsavailable')
             .then(locations => locations.json())
             .then(response => this.setState({
                 locations: response,
@@ -60,7 +61,7 @@ class Home extends React.Component {
 
     onSearchLocations = e => {
         var searchQuery = e.target.value;
-        var _filteredLocations = this.state.locations.filter(location => {
+        var _filteredLocations = Object.keys(this.state.locations).filter(location => {
             return location.toLowerCase().includes(searchQuery.toLowerCase());
         })
         this.setState({
@@ -133,8 +134,8 @@ const LocationDropdown = props => {
             <input onChange={props.onChange} placeholder="Search places..." />
             <ul>
                 {
-                    props.locations.map(location => {
-                        return <li onClick={() => props.onSelectLocation(location)}>{location}</li>
+                    Object.entries(props.locations).map(([location, avblJobs], i) => {
+                        return <li onClick={() => props.onSelectLocation(location)}>{location} ({avblJobs})</li>
                     })
                 }
             </ul>

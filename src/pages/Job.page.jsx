@@ -6,13 +6,11 @@ export const JobView = props => {
 
     const [job, setJob] = useState(null);
 
-    useEffect(() => {
-        fetch("http://localhost:3001/jobs/1")
-        .then(resp => resp.json())
-        .then(data => console.log(data[0]))
+    const base_url = "https://ac-job-board-api.herokuapp.com"
 
+    useEffect(() => {
         if (job == null) {
-            fetch(`http://localhost:3001/jobs/${props.match.params.jobId}`)
+            fetch(base_url+`/jobs/${props.match.params.jobId}`)
                 .then(resp => resp.json())
                 .then(job => setJob(job));
         }
