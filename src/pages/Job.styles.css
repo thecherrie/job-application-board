@@ -1,0 +1,67 @@
+.jobContentWrapper {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.redTopBanner {
+    background: #FF3C38;
+    height: 80px;
+    width: 100%;
+}
+
+h1#jobTitle {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+h3#jobSubtitle {
+    margin: 15px 0;
+    color: #b0b0b4;
+    font-weight: 500;
+}
+
+p#jobBody {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+button#jobApplyBtn {
+    cursor: pointer;
+    transition: 0.5 ease;
+    margin: 50px 0 30px 0;
+    width: 100%;
+    padding: 15px 20px;
+    background: #FF3C38;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button#jobApplyBtn:hover {
+    background: #e94c49;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .jobContentWrapper {
+        width: 60%;
+    }
+
+    button#jobApplyBtn {
+        transition: 0.5s ease;
+        width: auto;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .jobContentWrapper {
+        width: 50%;
+    }
+
+}

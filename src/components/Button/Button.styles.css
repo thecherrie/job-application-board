@@ -1,0 +1,22 @@
+.btn {
+    margin-top: 15px;
+    padding: 17px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #FF3C38;
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .btn {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+}

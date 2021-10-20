@@ -1,0 +1,8 @@
+.dropArea {
+    cursor: pointer;
+    border: 2px #b0b0b4 dashed;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: #b0b0b4;
+}

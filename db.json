@@ -1,0 +1,69 @@
+{
+  "locations": [
+    "London",
+    "Tokyo",
+    "New York",
+    "Amsterdam",
+    "Paris",
+    "Beijing",
+    "Manila",
+    "Moscow",
+    "Los Angeles",
+    "Sydney",
+    "Auckland",
+    "Kingston",
+    "Toronto",
+    "Rio de Janeiro"
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "JavaScript Developer",
+      "location": "London",
+      "description": "MSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      "salary": 40000
+    },
+    {
+      "id": 2,
+      "title": "PHP Engineer",
+      "location": "London",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+      "salary": 45000
+    },
+    {
+      "id": 3,
+      "title": "Content Manager",
+      "location": "New York",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+      "salary": 60000
+    },
+    {
+      "id": 4,
+      "title": "Logiciel Developeur",
+      "location": "Paris",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+      "salary": 50000
+    },
+    {
+      "id": 5,
+      "title": "Engineering Lead",
+      "location": "Tokyo",
+      "description": "Mauris efficitur, velit sed consequat varius, lacus lectus sodales ligula, aliquet porttitor mi elit a dui. Pellentesque in sagittis urna. Pellentesque quis porta purus. Praesent interdum consectetur sem, eu fringilla dolor luctus vel. Nulla tristique nunc nec nisi iaculis, eu egestas leo dignissim. Maecenas sit amet dolor sapien. Nunc scelerisque, tortor ut tempus ultrices, purus dolor convallis ex, nec tempus nisi lacus eget magna. In luctus molestie eros a finibus. Sed non consequat tortor, non molestie elit. Donec viverra sapien sit amet dolor semper, non euismod eros luctus. Nam porta ullamcorper tellus at facilisis.",
+      "salary": 150000
+    },
+    {
+      "id": 6,
+      "title": "Application Analyst",
+      "location": "Amsterdam",
+      "description": "Mauris nisl lectus, tincidunt at auctor vel, mollis sit amet mi. Vivamus varius varius fermentum. Praesent efficitur augue nulla, at scelerisque sem imperdiet nec. Fusce quis sem vel felis fermentum sollicitudin vitae a libero. In sit amet pretium sem, aliquam condimentum enim. Morbi sollicitudin, purus a bibendum mattis, nunc ex sollicitudin lacus, vel malesuada neque ligula vel justo. Maecenas vitae blandit velit.",
+      "salary": 60000
+    }
+  ],
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}

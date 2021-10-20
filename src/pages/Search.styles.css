@@ -1,0 +1,93 @@
+.searchPageContentWrapper {
+    margin: auto;
+    width: 90%;
+}
+
+.searchPageContentWrapper #matches {
+    margin: 50px 0;
+}
+
+#searchPageContent {
+    
+}
+
+.searchPageSearchWrapper {
+    top: -30px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.searchPageSearchWrapper div {
+    padding: 18px 30px 18px 20px;
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #FF3C38;
+    box-shadow: 0px 0px 13px -9px rgba(0,0,0,1);
+}
+
+.searchPageSearchWrapper div:hover {
+    cursor: pointer;
+}
+
+.searchPageSearch {
+    width: 70%;
+    border:none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 0px 13px -9px rgba(0,0,0,1);
+}
+
+.searchTile {
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -9px rgba(0,0,0,0.2);
+}
+
+.searchTile h1 {
+    margin: 6px 0;
+}
+
+.searchTile h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.searchTile p {
+    color: #b0b0b4;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .searchPageContentWrapper {
+        width: 60%;
+    }
+
+    .searchPageSearch {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .searchPageContentWrapper {
+        width: 50%;
+    }
+
+    .searchPageSearch {
+        width: 50%;
+    }
+
+}
+

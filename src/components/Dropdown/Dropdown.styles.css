@@ -1,0 +1,12 @@
+.locationList {
+  
+}
+
+.dropdown {
+    display: flex;
+    background: white;
+    padding: 20px;
+    color: black;
+    border-radius: 30px;
+    width: 100%;
+}
