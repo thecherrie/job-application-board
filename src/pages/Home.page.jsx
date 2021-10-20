@@ -34,8 +34,7 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        // fetch('https://ac-job-board-api.herokuapp.com/locations')
-        fetch('http://localhost:3001/jobsavailable')
+        fetch('https://ac-job-board-api.herokuapp.com/jobsavailable')
             .then(locations => locations.json())
             .then(response => this.setState({
                 locations: response,
