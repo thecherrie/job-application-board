@@ -11,7 +11,7 @@ export default function Apply(props) {
 
     useEffect(() => {
         if (job == null) {
-            fetch(`http://localhost:3001/jobs/${props.match.params.jobId}`)
+            fetch(`https://ac-job-board-api.herokuapp.com/jobs/${props.match.params.jobId}`)
                 .then(resp => resp.json())
                 .then(job => setJob(job));
         }
